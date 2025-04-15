@@ -16,7 +16,9 @@ const counterReducer = (state = 0, action) => {
   }
 }
 
-const store = configureStore(counterReducer)
+const store = configureStore({
+  reducer: counterReducer
+})
 
 const App = () => {
   return (
